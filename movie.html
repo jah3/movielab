@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Detail</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/movie-style.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
+    <link rel="icon" type="image/x-icon" href="back/—Pngtree—snail movie cinema film roll_5511363.png">
+  </head>
+  <body>
+    <!-- Navbar (same as your existing page) -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#Trending">Trending</a>
+        <a href="#Search">Search</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Section with Image -->
+    <section class="fullscreen-image" id="Home">
+      <!-- Background image with fade animation -->
+      <div class="background-image"></div>
+
+      <!-- Text content that won't be affected by the fade -->
+      <div class="content">
+        <!-- Container for movie cards -->
+        <div class="movie-card-container">
+            <!-- First Card: Movie Picture -->
+            <div class="movie-card">
+              <div class="poster-container">
+                <img
+                  src="back/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                  alt="Movie Poster"
+                />
+                <a href="#" class="play-button"><i class="fa-regular fa-circle-play" style="color: #ffffff;"></i></a>
+              </div>
+              
+            </div>
+
+
+          <!-- Second Card: Movie Information -->
+          <div class="movie-card">
+            <h2>INTERSTELLAR</h2>
+            <p>2014 ‧ Sci-fi/Drama ‧ 2h 49m</p>
+
+            <!-- Rating Stars using FontAwesome -->
+            <div class="rating">
+              <i class="fas fa-star" style="color: rgb(212, 181, 0); font-size: 15px"></i>
+              <i class="fas fa-star" style="color: rgb(212, 181, 0); font-size: 15px"></i>
+              <i class="fas fa-star" style="color: rgb(212, 181, 0); font-size: 15px"></i>
+              <i class="fas fa-star" style="color: rgb(212, 181, 0); font-size: 15px"></i>
+              <i class="fa-regular fa-star" style="color: rgb(212, 181, 0); font-size: 15px"></i> 8.0
+            </div>
+
+
+            <!-- Cast Section -->
+            <h2>THE CAST</h2>
+            <div class="cast">
+              <img src="actors/download.jfif" alt="Actor 1" />
+              <img src="actors/download (1).jfif" alt="Actor 2" />
+              <img src="actors/download (2).jfif" alt="Actor 3" />
+              <img src="actors/download (3).jfif" alt="Actor 4" />
+              <!-- Add more actors as needed -->
+            </div>
+
+            <!-- Description Section -->
+            <h2>DESCRIPTION</h2>
+            <p>
+              Interstellar is about Earth's last chance to find a habitable
+              planet before a lack of resources causes the human race to go
+              extinct. The film's protagonist is Cooper (Matthew McConaughey), a
+              former NASA pilot who is tasked with leading a mission through a
+              wormhole to find a habitable planet in another galaxy.
+            </p>
+
+        <!-- Video or Picture Section -->
+        <h2>VIDEO / PICTURE</h2>
+        <div class="picture-container">
+          <!-- First Picture -->
+          <div class="picture">
+            <a href="#modal-1">
+              <img src="back/int1.jpg" alt="Picture 1" />
+            </a>
+            <!-- Modal for Picture 1 -->
+            <div class="modal" id="modal-1">
+              <div class="modal-content">
+                <img src="back/int1.jpg" alt="Picture 1" />
+                <a href="#" class="modal-close-btn">&times;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Picture -->
+          <div class="picture">
+            <a href="#modal-2">
+              <img src="back/int2.jpg" alt="Picture 2" />
+            </a>
+            <!-- Modal for Picture 2 -->
+            <div class="modal" id="modal-2">
+              <div class="modal-content">
+                <img src="back/int2.jpg" alt="Picture 2" />
+                <a href="" class="modal-close-btn">&times;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Picture (Below) -->
+          <div class="picture">
+            <a href="#modal-3">
+              <img src="back/int3.jpg" alt="Picture 3" />
+            </a>
+            <!-- Modal for Picture 3 -->
+            <div class="modal" id="modal-3">
+              <div class="modal-content">
+                <img src="back/int3.jpg" alt="Picture 3" />
+                <a href="#" class="modal-close-btn">&times;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

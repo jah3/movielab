@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Include the Josefin Sans font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="back/—Pngtree—snail movie cinema film roll_5511363.png"
+    />
+  </head>
+  <body>
+    <!-- Header with Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="#Home">Home</a>
+        <a href="#Trending">Trending</a>
+        <a href="#Search">Search</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Section with Image -->
+    <section class="fullscreen-image" id="Home">
+      <!-- Background image with fade animation -->
+      <div class="background-image"></div>
+
+      <!-- Text content that won't be affected by the fade -->
+      <div class="content">
+        <h1>Welcome to Our Website</h1>
+        <p>Discover amazing things here.</p>
+
+        <!-- Buttons -->
+        <div class="buttons">
+          <a href="movie.html" class="btn red-btn">Play</a>
+          <a href="#" class="btn gray-btn">Watch Later</a>
+        </div>
+      </div>
+    </section>
+    <!-- Section with Card Grid -->
+    <section class="card-section" id="Trending">
+      <h1 style="color: white">TRENDING</h1>
+      <div class="card-grid">
+        <!-- Card 1 -->
+        <div class="card" id="card1">
+          <div class="card-image">
+            <img src="back/maxresdefault (1).jpg" alt="Card Image 1" />
+          </div>
+          <div class="card-content">
+            <h2>
+              Oppenheimer
+              <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+            </h2>
+            <p>
+              A biographical drama about J. Robert Oppenheimer, the scientist
+              who played a key role in the development of the atomic bomb.
+            </p>
+            <a href="#" class="btn">Watch now</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" id="card2">
+          <div class="card-image">
+            <img src="back/maxresdefault (2).jpg" alt="Card Image 2" />
+          </div>
+          <div class="card-content">
+            <h2>
+              Gran Turismo
+              <span class="rating"><i class="fas fa-star"></i> 4.2</span>
+            </h2>
+            <p>
+              An action-packed racing game that offers a realistic driving
+              experience with a wide range of cars and tracks.
+            </p>
+            <a href="#" class="btn">Watch now</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card" id="card3">
+          <div class="card-image">
+            <img
+              src="back/63e28659c0fdd9025761f37f_Untitled design (7).png"
+              alt="Card Image 3"
+            />
+          </div>
+          <div class="card-content">
+            <h2>
+              La La Land
+              <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+            </h2>
+            <p>
+              A romantic musical film that follows the love story between a jazz
+              musician and an aspiring actress in Los Angeles.
+            </p>
+            <a href="#" class="btn">Watch now</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card" id="card5">
+          <div class="card-image">
+            <img src="back/1323848.jpg" alt="Card Image 4" />
+          </div>
+          <div class="card-content">
+            <h2>
+              Supernatural
+              <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+            </h2>
+            <p>
+              A long-running TV series that explores supernatural mysteries,
+              demons, and the adventures of two brothers.
+            </p>
+            <a href="#" class="btn">Watch now</a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card" id="card5">
+          <div class="card-image">
+            <img
+              src="back/desktop-wallpaper-lucifer-season-5-resolution-tv-series-and-background-manifest-tv-show.jpg"
+              alt="Card Image 5"
+            />
+          </div>
+          <div class="card-content">
+            <h2>
+              Lucifer
+              <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+            </h2>
+            <p>
+              A crime drama series with a twist, featuring Lucifer Morningstar,
+              the Devil, who becomes a consultant for the LAPD.
+            </p>
+            <a href="#" class="btn">Watch now</a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card" id="card6">
+          <div class="card-image">
+            <img src="back/wp7042018.jpg" alt="Card Image 6" />
+          </div>
+          <div class="card-content">
+            <h2>
+              The Accountant
+              <span class="rating"><i class="fas fa-star"></i> 4.4</span>
+            </h2>
+            <p>
+              A thriller film about a talented accountant with autism who works
+              for criminal organizations while maintaining a double life.
+            </p>
+            <a href="#" class="btn">Watch now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section for Additional Text and Search -->
+    <section class="search-section" id="Search">
+      <!-- Search input and button -->
+      <div class="search-container">
+        <p>Can't Find Anything You Like?</p>
+        <p>
+          Search for thousands of unique movies from our growing database...
+        </p>
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Enter a movie title..."
+        />
+        <button id="search-button">Search</button>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer" id="Contact">
+      <div class="social-media">
+        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>&copy; 2023 MovieLab. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
