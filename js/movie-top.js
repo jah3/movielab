@@ -5,12 +5,12 @@ var swiper = new Swiper(".mySwiper", {
     },
 
     breakpoints: {
-      600: {
+      400: {
         slidesPerView: 4,
         spaceBetween: 10,
       },
       768: {
-        slidesPerView: 4,
+        slidesPerView: 7,
         spaceBetween: 15,
       },
       1068: {

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Detail</title>
     <link rel="stylesheet" type="text/css" href="css/movie-detail.css" />
+    <link rel="stylesheet" type="text/css" href="css/comment-section.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -67,6 +68,90 @@
           <div class="nav-content">
             <h2>Navigation</h2>
             <hr />
+            <!-- Hidden select elements with optgroups for mobile navigation -->
+            <div class="custom-nav-select-container">
+              <select id="category1Select" class="custom-nav-select">
+                <optgroup label="Genres">
+                  <option>Biographies</option>
+                  <option>Action</option>
+                  <option>Westerns</option>
+                  <option>War</option>
+                  <option>Detective</option>
+                  <option>Documentaries</option>
+                  <option>Drama</option>
+                  <option>Historical</option>
+                  <option>Comedy</option>
+                  <option>Crime</option>
+                  <option>Romance</option>
+                  <option>Animation</option>
+                  <option>Adventure</option>
+                  <option>Family</option>
+                  <option>Thriller</option>
+                  <option>Horror</option>
+                  <option>Science Fiction</option>
+                  <option>Fantasy</option>
+                  <option>Upcoming Movies</option>
+                  <option>Anime</option>
+                  <option>Dramas</option>
+                  <option>Children's</option>
+                  <option>Sports</option>
+                  <option>Reality Shows</option>
+                  <!-- Add more options here -->
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="custom-nav-select-container">
+              <select id="category2Select" class="custom-nav-select">
+                <optgroup label="By Year">
+                  <option>2014</option>
+                  <option>2015</option>
+                  <option>2016</option>
+                  <option>2017</option>
+                  <option>2018</option>
+                  <option>2019</option>
+                  <option>2020</option>
+                  <option>2021</option>
+                  <option>2022</option>
+                  <option>2023</option>
+                  <!-- Add more options here -->
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="custom-nav-select-container">
+              <select id="category3Select" class="custom-nav-select">
+                <optgroup label="By Country">
+                  <option>American</option>
+                  <option>British</option>
+                  <option>Russian</option>
+                  <!-- Add more options here -->
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="custom-nav-select-container">
+              <select id="category4Select" class="custom-nav-select">
+                <optgroup label="TV Series">
+                  <option>Russian</option>
+                  <option>Foreign (Non-Russian)</option>
+                  <option>Turkish</option>
+                  <!-- Add more options here -->
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="mobile-nav-select-container">
+              <select id="tvSeriesSelect" class="mobile-nav-select">
+                <optgroup label="TV Series">
+                  <option>Russian</option>
+                  <option>Foreign (Non-Russian)</option>
+                  <option>Turkish</option>
+                  <!-- Add more TV series options here -->
+                </optgroup>
+              </select>
+            </div>
+
             <table class="nav-table">
               <thead>
                 <tr>
@@ -142,8 +227,79 @@
                 </tr>
               </thead>
             </table>
+            <hr />
           </div>
-          <div class="movie-sector">a</div>
+
+          <div class="movie-sector">
+            <div class="upper-movie-box">
+              <div class="poster-movie">
+                <img src="poster/open.png" style="width: 200px" />
+              </div>
+              <div class="movie-description">
+                <p>
+                  The plot tells the story of Robert Oppenheimer, the man
+                  responsible for the development of the atomic bomb. The film
+                  is dedicated to the events leading up to the atomic test of
+                  1945, as well as Oppenheimer's struggle with guilt and
+                  paranoia in the subsequent years. The movie narrates
+                  Oppenheimer's story, starting from his early days as a
+                  physicist, through his involvement in the Manhattan Project,
+                  and up to his possible role as the "father of the atomic
+                  bomb." It's a tale of ambition, power, and moral ambiguity as
+                  the character is forced to confront the consequences of his
+                  actions. The film also focuses on the psychological impact of
+                  Oppenheimer's work as he grapples with guilt and paranoia in
+                  the years following the atomic test. His past haunts him, and
+                  he realizes that he unleashed destructive power upon the
+                  world.
+                </p>
+              </div>
+            </div>
+            <div class="lower-movie-box">
+              <div class="movie-detail-lower">
+                <p>Here's the translation to English:</p>
+                <p>Release Year: 2023</p>
+                <p>Original Title: Oppenheimer</p>
+                <p>Country: United Kingdom, USA</p>
+                <p>
+                  Genre: Movies / Foreign Movies / 2023 Movies / Biography /
+                  Drama / Historical
+                </p>
+                <br />
+                <p>Quality: TS (Telesync)</p>
+                <p>Duration: 60 minutes</p>
+                <p>Premiere (Russia): July 19, 2023</p>
+                <br />
+                <p>Director: Christopher Nolan</p>
+                <p>
+                  Starring: Cillian Murphy, Jason Pfister, Florence Pugh, Emily
+                  Blunt, Gary Oldman, Robert Downey Jr., Matt Damon, Kenneth
+                  Branagh, Rami Malek, Jack Quaid
+                </p>
+              </div>
+              <div class="movie-player">
+                <iframe
+                  width="100%"
+                  height="400px"
+                  src="https://www.youtube.com/embed/uYPbbksJxIg"
+                  title="Oppenheimer | New Trailer"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              
+              <div class="comment-container">
+                <div class="comment-container">
+                  <div class="comment">
+                      <div class="profile-picture"><img src="avatar/project.jpg" alt=""></div>
+                      <div class="comment-details">
+                          <textarea placeholder="Write your comment here"></textarea>
+                      </div>
+                      <button class="submit-button">Submit</button>
+                  </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

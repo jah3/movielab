@@ -8,7 +8,10 @@ html {
   font-family: "Josefin Sans", sans-serif;
   scroll-behavior: smooth;
 }
-
+p {
+  margin: 0;
+  padding: 0;
+}
 /* Style for the navbar */
 .navbar {
   background-color: #1d1d1d;
@@ -65,8 +68,9 @@ html {
   top: auto; /* Adjust this value to vertically center your content */
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 80%;
   width: 60%;
+  
   z-index: 1; /* Ensure the content is above the background image */
 }
 
@@ -80,7 +84,7 @@ html {
   z-index: 1; /* Ensure the content is above the background image */
   color: white;
   display: grid;
-  grid-template-columns: 0fr 0fr;
+  grid-template-columns: 0fr 1fr;
   grid-gap: 20px;
 }
 
@@ -116,18 +120,110 @@ html {
   padding-right: 20px;
   padding-left: 20px;
   font-size: 14px;
-  border-right-style: solid ;
+  border-right-style: solid;
   border-right-color: #1d1d1d;
-  border-right-width: 1px ;
-}
-.movie-sector {
+  border-right-width: 1px;
 }
 
+/* Hide the select element by default */
+.mobile-nav-select {
+  display: none;
+  position: absolute;
+  top: 50px; /* Adjust the positioning as needed */
+  background-color: #1d1d1d;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  z-index: 999;
+}
 
+/* Style for the button to open the navigation */
+#mobileNavButton {
+  display: block;
+  background-color: #1d1d1d;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+}
+.custom-nav-select-container {
+  display: none;
+}
 
-@media (max-width: 900px) {
-  .main-content{
+.upper-movie-box {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0fr 1fr; /* Adjusted column widths */
+  grid-gap: 20px;
+}
+
+.lower-movie-box {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr; /* Adjusted column widths */
+  grid-gap: 20px;
+}
+.movie-detail-lower {
+  width: 100%;
+}
+
+@media (max-width: 1300px) {
+  .movie-sector {
+    grid-template-columns: 1fr;
+  }
+  /* Style the select containers */
+  .custom-nav-select-container {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing as needed */
+  }
+
+  .custom-nav-select-container:hover {
+    transform: scale(1.05);
+  }
+
+  /* Style the select elements */
+  .custom-nav-select {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    appearance: none; /* Remove default arrow */
+    outline: none;
+  }
+
+  /* Custom styling for the dropdown arrow */
+  .custom-nav-select::after {
+    content: "\25BC"; /* Unicode for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+    pointer-events: none;
+  }
+  .nav-table {
+    display: none;
+  }
+  .main-content {
+    top: 105%;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .main-content {
     width: 90%;
   }
+  .swiper-slide {
+    width: 30%;
+  }
 }
-
