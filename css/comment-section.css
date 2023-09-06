@@ -1,7 +1,6 @@
 .comment-container {
     margin-top: 2%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     width: 100%;
 }
 
@@ -22,7 +21,7 @@
 
 input[type="text"],
 textarea {
-    width: 70%;
+ 
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;

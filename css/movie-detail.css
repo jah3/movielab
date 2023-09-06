@@ -174,6 +174,16 @@ p {
 }
 
 @media (max-width: 1300px) {
+  .movie-description{
+    width: 100%;
+  }
+  .upper-movie-box {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr; /* Adjusted column widths */
+    grid-gap: 20px;
+  }
   .movie-sector {
     grid-template-columns: 1fr;
   }
@@ -213,7 +223,7 @@ p {
     display: none;
   }
   .main-content {
-    top: 105%;
+    top: 115%;
   }
   .content {
     display: grid;
