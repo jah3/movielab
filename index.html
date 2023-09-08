@@ -28,12 +28,13 @@
         <a href="#Trending">Trending</a>
         <a href="#Search">Search</a>
         <a href="#Contact">Contact</a>
+        <a href="index.html" class="logo"> <i class="fa-solid fa-film"></i></a>
       </nav>
     </header>
     <!-- Login Popup -->
     <div class="popup" id="loginPopup">
       <div class="popup-content">
-        <i class="fas fa-times" id="closePopup" style="float: right;"></i>
+        <i class="fas fa-times" id="closePopup" style="float: right"></i>
         <h2>Login</h2>
 
         <form id="loginForm">
@@ -41,8 +42,8 @@
           <input type="text" id="username" required />
           <label for="password">Password:</label>
           <input type="password" id="password" required />
+          <p id="errorMessage" style="color: red; font-size: 14px;"></p>
           <input type="submit" value="Submit" />
-          <p id="errorMessage" style="color: red"></p>
         </form>
       </div>
     </div>
@@ -81,7 +82,7 @@
               A biographical drama about J. Robert Oppenheimer, the scientist
               who played a key role in the development of the atomic bomb.
             </p>
-            <a href="movies/movie-page.html" class="btn">Watch now</a>
+            <a href="movie-page.html" class="btn">Watch now</a>
           </div>
         </div>
 

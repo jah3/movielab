@@ -60,7 +60,7 @@ loginForm.addEventListener("submit", (e) => {
   // Check if the entered username and password are "admin"
   if (username === "admin" && password === "admin") {
     // Redirect to movie.html
-    window.location.href = "movies/movie-page.html";
+    window.location.href = "movie-page.html";
   } else {
     // Display an error message in red
     errorMessage.textContent =
