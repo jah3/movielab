@@ -11,7 +11,22 @@ html {
 p {
   margin: 0;
   padding: 0;
+  color: rgb(221, 221, 221);
+  margin: 5px 0;
+  text-align: left; /* Align details to the left */
+  font-family: "Lato", sans-serif; /* Apply the Lato font */
 }
+/* Style for the navbar */
+.navbar {
+  background-color: #1d1d1d;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999; /* Set a high z-index to make it overlap other elements */
+}
+
+/* CSS */
 /* Style for the navbar */
 .navbar {
   background-color: #1d1d1d;
@@ -33,6 +48,11 @@ p {
   font-size: 18px;
 }
 
+/* Logo image */
+.navbar .logo {
+  float: right; /* Align the logo to the right */
+  margin-right: 20px; /* Adjust the margin to your preference */
+}
 /* Style for the fullscreen image */
 .fullscreen-image {
   position: relative;
@@ -70,7 +90,7 @@ p {
   transform: translate(-50%, -50%);
   top: 80%;
   width: 60%;
-  
+
   z-index: 1; /* Ensure the content is above the background image */
 }
 
@@ -175,7 +195,7 @@ p {
 }
 
 @media (max-width: 1300px) {
-  .movie-description{
+  .movie-description {
     width: 100%;
   }
   .upper-movie-box {
@@ -224,7 +244,7 @@ p {
     display: none;
   }
   .main-content {
-    top: 115%;
+    top: 122%;
   }
   .content {
     display: grid;

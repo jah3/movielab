@@ -30,7 +30,21 @@
         <a href="#Contact">Contact</a>
       </nav>
     </header>
-
+    <!-- Login Popup -->
+    <div class="popup" id="loginPopup">
+      <div class="popup-content">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="username">Username:</label>
+          <input type="text" id="username" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" required />
+          <input type="submit" value="Submit" />
+          <p id="errorMessage" style="color: red"></p>
+        </form>
+        <button id="closePopup">Close</button>
+      </div>
+    </div>
     <!-- Section with Image -->
     <section class="fullscreen-image" id="Home">
       <!-- Background image with fade animation -->
@@ -44,7 +58,7 @@
         <!-- Buttons -->
         <div class="buttons">
           <a href="movie.html" class="btn red-btn">Play</a>
-          <a href="#" class="btn gray-btn">Watch Later</a>
+          <a href="#" class="btn gray-btn" id="loginBtn">Login</a>
         </div>
       </div>
     </section>
