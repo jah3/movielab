@@ -1,0 +1,147 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: black;
+}
+.content {
+  background-color: black;
+  width: 50%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+}
+
+
+/* Style for the container holding the movie cards */
+.movie-card-container {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed for spacing between cards */
+  flex-wrap: wrap; /* Allows cards to wrap to the next line if the screen is too narrow */
+}
+
+/* Style for each movie card */
+.movie-card {
+  margin: 10px;
+  padding: 0px;
+  text-align: center;
+  flex: 1; /* Distributes available space equally between the cards */
+  max-width: calc(50% - 20px); /* Ensures two cards fit in a row with spacing */
+  box-sizing: border-box; /* Includes padding in max-width calculation */
+}
+
+/* Style for the movie image */
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cast img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+/* Style for movie information */
+.movie-card h2 {
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: left; /* Align title to the left */
+  font-family: "Lato", sans-serif; /* Apply the Lato font */
+}
+
+/* Style for movie details (e.g., release date, director) */
+.movie-card p {
+  color: rgb(221, 221, 221);
+  font-size: 14px;
+  margin: 5px 0;
+  text-align: left; /* Align details to the left */
+  font-family: "Lato", sans-serif; /* Apply the Lato font */
+}
+
+/* Style for movie description */
+.movie-card .description {
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: left; /* Align description to the left */
+  font-family: "Lato", sans-serif; /* Apply the Lato font */
+}
+
+/* Style for rating stars */
+.movie-card .rating {
+  font-size: 15px;
+  margin-top: 5px;
+  text-align: left;
+  color: rgb(212, 181, 0);
+  font-family: "Lato", sans-serif; /* Apply the Lato font */
+}
+
+/* Style for the picture container */
+.picture-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style for each picture */
+.picture {
+  flex: 2;
+  margin: 5px;
+  width: calc(33.33% - 10px); /* Set the width to one-third minus the margin */
+}
+
+/* Adjust the width and height of the pictures as needed */
+.picture img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for the play button */
+.play-button {
+  position: absolute;
+  top: 80%;
+  left: 98%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  border-radius: 5%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  width: 30px;
+  height: 40px;
+}
+
+.play-button:hover {
+  background-color: rgb(218, 34, 34);
+}
+
+/* Style for the poster container */
+.poster-container {
+  position: relative;
+}
+
+/* Adjust the position and size of the play button as needed */
+
+/* Responsive styles for mobile devices */
+@media (max-width: 900px) {
+  .content {
+    width: 90%;
+  }
+  .movie-card-container {
+    height: 42rem;
+  }
+
+  /* Style for the picture container */
+  .picture-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Style for each picture */
+  .picture {
+    flex: 2;
+    margin: 5px;
+   width: 100%; /* Set the width to one-third minus the margin */
+  }
+}
