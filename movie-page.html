@@ -6,6 +6,7 @@
     <title>Movie Detail</title>
     <link rel="stylesheet" type="text/css" href="css/movie-detail.css" />
     <link rel="stylesheet" type="text/css" href="css/comment-section.css" />
+    
     <link
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
     rel="stylesheet"
@@ -32,15 +33,29 @@
     />
   </head>
   <body>
-    <!-- Navbar (same as your existing page) -->
-    <header>
+    <!-- MOBILE NAVBAR-->
+    <header class="mobile-navbar">
       <nav class="navbar">
-        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa-solid fa-bars" style="color: #ffffff;">  MovieLab</i></button>
+          <div class="dropdown-content">
+            <a href="index.html#Trending">Trending</a>
+            <a href="index.html#Search">Search</a>
+            <a href="index.html#Contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+   
+
+    </header>
+     <!-- Header with Navbar -->
+     <header class="pc-navbar">
+      <nav class="navbar">
+        <a href="index.html" class="logo"> <i class="fa-solid fa-film"></i> MovieLab</a>
+        <a href="index.html#Trending">Trending</a>
         <a href="index.html#Search">Search</a>
         <a href="index.html#Contact">Contact</a>
-        <a href="index.html" class="logo">
-          <i class="fa-solid fa-film" ></i></a>
-        </nav>
+      </nav>
     </header>
 
     <!-- Section with Image -->

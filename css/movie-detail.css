@@ -19,18 +19,6 @@ p {
 /* Style for the navbar */
 .navbar {
   background-color: #1d1d1d;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 999; /* Set a high z-index to make it overlap other elements */
-}
-
-/* CSS */
-/* Style for the navbar */
-.navbar {
-  background-color: #1d1d1d;
-  overflow: hidden;
   position: fixed;
   width: 100%;
   top: 0;
@@ -48,11 +36,6 @@ p {
   font-size: 18px;
 }
 
-/* Logo image */
-.navbar .logo {
-  float: right; /* Align the logo to the right */
-  margin-right: 20px; /* Adjust the margin to your preference */
-}
 /* Style for the fullscreen image */
 .fullscreen-image {
   position: relative;
@@ -193,8 +176,48 @@ p {
 .movie-detail-lower {
   width: 100%;
 }
+.dropbtn {
+  background-color: #1d1d1d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
 
+.dropdown {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: #1d1d1d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+/* Responsive styles for mobile devices */
 @media (max-width: 1300px) {
+  .pc-navbar{
+    display: none ;
+  }
   .movie-description {
     width: 100%;
   }
@@ -217,7 +240,6 @@ p {
   .custom-nav-select-container:hover {
     transform: scale(1.05);
   }
-
   /* Style the select elements */
   .custom-nav-select {
     background-color: #333;
@@ -253,6 +275,27 @@ p {
   }
   .main-content {
     width: 90%;
+  }
+   /* Style for the navbar */
+   .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    display: flex; /* Use flexbox to center text in the navbar */
+    justify-content: center; /* Horizontally center items */
+  }
+
+  /* Navbar links */
+  .navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 5px;
+    text-decoration: none;
+    margin: 0 10px; /* Add some space between links */
+  }
+  .navbar {
+    justify-content: center;
   }
   .swiper-slide {
     width: 30%;
