@@ -8,6 +8,25 @@ html {
   font-family: "Josefin Sans", sans-serif;
   scroll-behavior: smooth;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3d3d3d; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 p {
   margin: 0;
   padding: 0;
@@ -212,7 +231,7 @@ p {
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #272727;}
 /* Responsive styles for mobile devices */
 @media (max-width: 1300px) {
   .pc-navbar{
@@ -266,7 +285,7 @@ p {
     display: none;
   }
   .main-content {
-    top: 125%;
+    top: 130%;
   }
   .content {
     display: grid;
