@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Detail</title>
+  <link rel="stylesheet" type="text/css" href="css/movie-detail.css" />
+  <link rel="stylesheet" type="text/css" href="css/comment-section.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <link rel="icon" 0 type="image/x-icon" href="back/—Pngtree—snail movie cinema film roll_5511363.png" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- MOBILE NAVBAR-->
+  <header class="mobile-navbar">
+    <nav class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn"><i class="fa-solid fa-bars" style="color: #ffffff;"> MovieLab</i></button>
+        <div class="dropdown-content">
+          <a href="index.html#Home">Home</a>
+          <a href="index.html#Search">Search</a>
+          <a href="index.html#Contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+  <!-- Header with Navbar -->
+  <header class="pc-navbar">
+    <nav class="navbar">
+      <a href="index.html" class="logo"> <i class="fa-solid fa-film"></i> MovieLab</a>
+      <a href="index.html#Home">Home</a>
+      <a href="index.html#Search">Search</a>
+      <a href="index.html#Contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Section with Image -->
+  <section class="fullscreen-image" id="Home">
+    <!-- Background image with fade animation -->
+    <div class="background-image"></div>
+
+    <!-- Main content (on top of Swiper) -->
+    <div class="main-content">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="movie-page2.html"><img src="poster/gran_t.png" /></a></div>
+          <div class="swiper-slide"><a href="movie.html"><img src="poster/inter.png" /></a></div>
+          <div class="swiper-slide"><a href="movie-page5.html"><img src="poster/lucif.png" /></a></div>
+          <div class="swiper-slide"><a href="movie-page.html"><img src="poster/open.png" /></a></div>
+          <div class="swiper-slide"><a href="movie-page4.html"><img src="poster/super.png" /></a></div>
+          <div class="swiper-slide"><a href=""><img src="poster/carbon.png" /></a></div>
+          <div class="swiper-slide"><a href=""><img src="poster/deti.png" /></a></div>
+          <div class="swiper-slide"><a href=""><img src="poster/dragon.png" /></a></div>
+          <div class="swiper-slide"><a href=""><img src="poster/fast.png" /></a></div>
+          <div class="swiper-slide"><a href=""><img src="poster/shrek.png" /></a></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="nav-content">
+          <h2>Navigation</h2>
+          <hr />
+          <!-- Hidden select elements with optgroups for mobile navigation -->
+          <div class="custom-nav-select-container">
+            <select id="category1Select" class="custom-nav-select">
+              <optgroup label="Genres">
+                <option>Biographies</option>
+                <option>Action</option>
+                <option>Westerns</option>
+                <option>War</option>
+                <option>Detective</option>
+                <option>Documentaries</option>
+                <option>Drama</option>
+                <option>Historical</option>
+                <option>Comedy</option>
+                <option>Crime</option>
+                <option>Romance</option>
+                <option>Animation</option>
+                <option>Adventure</option>
+                <option>Family</option>
+                <option>Thriller</option>
+                <option>Horror</option>
+                <option>Science Fiction</option>
+                <option>Fantasy</option>
+                <option>Upcoming Movies</option>
+                <option>Anime</option>
+                <option>Dramas</option>
+                <option>Children's</option>
+                <option>Sports</option>
+                <option>Reality Shows</option>
+                <!-- Add more options here -->
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="custom-nav-select-container">
+            <select id="category2Select" class="custom-nav-select">
+              <optgroup label="By Year">
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <!-- Add more options here -->
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="custom-nav-select-container">
+            <select id="category3Select" class="custom-nav-select">
+              <optgroup label="By Country">
+                <option>American</option>
+                <option>British</option>
+                <option>Russian</option>
+                <!-- Add more options here -->
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="custom-nav-select-container">
+            <select id="category4Select" class="custom-nav-select">
+              <optgroup label="TV Series">
+                <option>Russian</option>
+                <option>Foreign (Non-Russian)</option>
+                <option>Turkish</option>
+                <!-- Add more options here -->
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="mobile-nav-select-container">
+            <select id="tvSeriesSelect" class="mobile-nav-select">
+              <optgroup label="TV Series">
+                <option>Russian</option>
+                <option>Foreign (Non-Russian)</option>
+                <option>Turkish</option>
+                <!-- Add more TV series options here -->
+              </optgroup>
+            </select>
+          </div>
+
+          <table class="nav-table">
+            <thead>
+              <tr>
+                <td rowspan="3" style="vertical-align: top">
+                  <strong>Genres:</strong>
+                  <ul>
+                    <li>Biographies</li>
+                    <li>Action</li>
+                    <li>Westerns</li>
+                    <li>War</li>
+                    <li>Detective</li>
+                    <li>Documentaries</li>
+                    <li>Drama</li>
+                    <li>Historical</li>
+                    <li>Comedy</li>
+                    <li>Crime</li>
+                    <li>Romance</li>
+                    <li>Animation</li>
+                    <li>Adventure</li>
+                    <li>Family</li>
+                    <li>Thriller</li>
+                    <li>Horror</li>
+                    <li>Science Fiction</li>
+                    <li>Fantasy</li>
+                    <li>Upcoming Movies</li>
+                    <li>Anime</li>
+                    <li>Dramas</li>
+                    <li>Children's</li>
+                    <li>Sports</li>
+                    <li>Reality Shows</li>
+                  </ul>
+                </td>
+                <td>
+                  <strong>By year:</strong>
+                  <ul>
+                    <li>2014</li>
+                    <li>2015</li>
+                    <li>2016</li>
+                    <li>2017</li>
+                    <li>2018</li>
+                    <li>2019</li>
+                    <li>2020</li>
+                    <li>2021</li>
+                    <li>2022</li>
+                    <li>2023</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>By Country:</strong>
+                  <ul>
+                    <li>American</li>
+                    <li>British</li>
+                    <li>Russian</li>
+                    <li>Indian</li>
+                    <li>German</li>
+                    <li>French</li>
+                    <li>Kazakhstani</li>
+                    <li>Ukrainian</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>TV Series:</strong>
+                  <ul>
+                    <li>Russian</li>
+                    <li>Foreign (Non-Russian)</li>
+                    <li>Turkish</li>
+                  </ul>
+                </td>
+              </tr>
+            </thead>
+          </table>
+          <hr />
+        </div>
+
+        <div class="movie-sector">
+          <div class="upper-movie-box">
+            <div class="poster-movie">
+              <img src="poster/lucif.png" style="width: 200px" />
+            </div>
+            <div class="movie-description">
+              <p>
+                Did you know that you can get bored in Hell? The Devil has been in Hell since the beginning, but now
+                he's had enough and has headed to New York to run a nightclub. Surprisingly, he enjoys working at the
+                nightclub much more than being the ruler of Hell. Lucifer realizes that his deep desires as a detective
+                have caused him more harm than good. It turns out he's not ready to be God in the literal sense, even
+                though he fought for it fiercely in the previous season. He understands that being God means he must
+                love all living beings equally and selflessly, which he believes doesn't suit him. He tries various ways
+                to change the situation, seeking advice from Chloe and often misinterpreting Dr. Linda Martin's
+                counseling.
+
+                Unbeknownst to him, he encounters a red-winged angel who has less than noble intentions. Chloe is
+                worried that Lucifer won't take on the role of God but gives him the chance to sort out his emotions and
+                even assists him when she can. She continues to solve mysteries, even after leaving the Los Angeles
+                police force, to help Lucifer with his divine responsibilities.
+              </p>
+            </div>
+          </div>
+          <div class="lower-movie-box">
+            <div class="movie-detail-lower">
+              <p>Release Year: 2016</p>
+              <p>Original Title: Lucifer</p>
+              <p>Country: United States</p>
+              <p>
+                Genre: TV Series / Fantasy / Urban Fantasy / Crime / Drama
+              </p>
+              <br />
+              <p>Quality: HDTV</p>
+              <p>Duration: 42 minutes</p>
+              <p>Premiere (USA): January 25, 2016</p>
+              <br />
+              <p>Creators: Tom Kapinos</p>
+              <p>
+                Starring: Tom Ellis, Lauren German, D. B. Woodside, Lesley-Ann Brandt, Kevin Alejandro, Rachael Harris,
+                Aimee Garcia
+              </p>
+            </div>
+          </div>
+          <div class="movie-player">
+            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/KRQb74Cr9N0"
+              title="Lucifer | Season 4 Official Trailer [HD] | Netflix”" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+
+          <div class="comment-container">
+            <div class="comment-container">
+              <div class="comment">
+                <div class="profile-picture"><img src="avatar/project.jpg" alt=""></div>
+                <div class="comment-details">
+                  A very engaging and heartwarming series. I really liked it!!!</div>
+              </div>
+              <div class="comment">
+                <div class="profile-picture"><img src="avatar/project.jpg" alt=""></div>
+                <div class="comment-details">
+                  <textarea placeholder="Write your comment here"></textarea>
+                </div>
+                <button class="submit-button">Submit</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/movie-top.js"></script>
+</body>
+
+</html>

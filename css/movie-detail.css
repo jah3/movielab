@@ -90,7 +90,7 @@ p {
   top: auto; /* Adjust this value to vertically center your content */
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 90%;
+  top: 80%;
   width: 60%;
 
   z-index: 1; /* Ensure the content is above the background image */
@@ -283,9 +283,6 @@ p {
   }
   .nav-table {
     display: none;
-  }
-  .main-content {
-    top: 130%;
   }
   .content {
     display: grid;
