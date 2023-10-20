@@ -290,6 +290,7 @@ p {
     grid-gap: 20px;
   }
   .main-content {
+    top: 125%;
     width: 90%;
   }
    /* Style for the navbar */
