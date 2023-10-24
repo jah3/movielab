@@ -394,21 +394,6 @@ input[type="submit"] {
   background-color: #272727;
 }
 
-.search-popup-panel {
-  display: none; /* Initially hidden */
-  position: absolute; /* Absolute positioning */
-  top: 60px; /* Adjust this value based on your navbar's height */
-  right: 50px; /* Adjust this value to position the panel */
-  width: 250px;
-  background-color: white;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 10; /* Ensure the panel appears above other content */
-}
-
-.search-popup-content {
-  padding: 15px;
-}
 
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
