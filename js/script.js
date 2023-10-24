@@ -25,6 +25,7 @@ searchInput.addEventListener("input", function () {
   });
 });
 
+
 // Get references to the button and the pop-up
 const loginBtn = document.getElementById("loginBtn");
 const loginPopup = document.getElementById("loginPopup");

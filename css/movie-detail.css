@@ -239,7 +239,7 @@ p {
   background-color: #272727;
 }
 
-.movie-description p{
+.movie-description p {
   text-align: justify;
   text-justify: inter-word;
   margin-right: 10px;
@@ -329,5 +329,20 @@ p {
   }
   .swiper-slide {
     width: 30%;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* this will vertically center align the items */
+  }
+  .dropdown {
+    position: relative; /* keep this to position the dropdown content correctly */
+  }
+  .dropbtn {
+    margin-right: 15px;
+  }
+  .dropdown-content {
+    right: 0; /* this will align the dropdown to the right of its container */
+    left: auto; /* this will override any left alignment */
   }
 }
