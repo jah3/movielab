@@ -14,17 +14,17 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #3d3d3d; 
+  background: #3d3d3d;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 /* Style for the navbar */
 .navbar {
@@ -289,7 +289,6 @@ form {
   gap: 10px;
   display: flex;
   flex-direction: column;
-  
 }
 
 label {
@@ -351,7 +350,6 @@ input[type="submit"] {
   right: 0;
 }
 
-
 .dropbtn {
   background-color: #1d1d1d;
   color: white;
@@ -372,7 +370,7 @@ input[type="submit"] {
   position: absolute;
   background-color: #1d1d1d;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -384,19 +382,40 @@ input[type="submit"] {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropdown:hover .dropbtn {background-color: #272727;}
+.dropdown:hover .dropbtn {
+  background-color: #272727;
+}
+
+.search-popup-panel {
+  display: none; /* Initially hidden */
+  position: absolute; /* Absolute positioning */
+  top: 60px; /* Adjust this value based on your navbar's height */
+  right: 50px; /* Adjust this value to position the panel */
+  width: 250px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Ensure the panel appears above other content */
+}
+
+.search-popup-content {
+  padding: 15px;
+}
+
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
-
-
-  .pc-navbar{
-    display: none ;
+  .pc-navbar {
+    display: none;
   }
-  
+
   .popup-content {
     width: 70%;
   }
